@@ -1,30 +1,30 @@
 export interface Source {
-  id: string;
-  name: string;
+    id: string;
+    name: string;
 }
 
 export interface Article {
-  source: Source;
-  author: string | null;
-  title: string;
-  description: string | null;
-  url: string;
-  urlToImage: string | null;
-  publishedAt: string;
-  content: string | null;
+    source: Source;
+    author: string | null;
+    title: string;
+    description: string | null;
+    url: string;
+    urlToImage: string | null;
+    publishedAt: string;
+    content: string | null;
 }
 
 export interface SourcesResponse {
-  status: string;
-  sources: Source[];
+    status: string;
+    sources: Source[];
 }
 
 export interface FullSource {
-    id: string,
-      name: string,
-      description: string,
-      url: string,
-      category: string,
-      language: string,
-      country: string
+    id: string;
+    name: string;
+    description: string;
+    url: string;
+    category: string;
+    language: string;
+    country: string;
 }
