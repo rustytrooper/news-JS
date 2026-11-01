@@ -19,6 +19,12 @@ export interface SourcesResponse {
     sources: Source[];
 }
 
+export interface EverythingNewsResponse {
+  status: string;
+  totalResults: number;
+  articles: Article[];
+}
+
 export interface FullSource {
     id: string;
     name: string;
@@ -28,3 +34,4 @@ export interface FullSource {
     language: string;
     country: string;
 }
+
