@@ -9,8 +9,8 @@ interface RequestParams {
 }
 
 class Loader {
-    protected baseLink: string;
-    protected options: Record<string, string>;
+    protected readonly baseLink: string;
+    protected readonly options: Record<string, string>;
     constructor({ baseLink, options }: LoaderParams) {
         this.baseLink = baseLink;
         this.options = options;

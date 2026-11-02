@@ -3,10 +3,7 @@ import { SourcesResponse, EverythingNewsResponse } from '../../types';
 
 class AppController extends AppLoader {
     public getSources(callback: (data: SourcesResponse) => void): void {
-        super.getResp<SourcesResponse>(
-            { endpoint: 'sources' },
-            callback
-        );
+        super.getResp<SourcesResponse>({ endpoint: 'sources' }, callback);
     }
 
     public getNews(e: MouseEvent, callback: (data: EverythingNewsResponse) => void): void {
@@ -40,9 +37,7 @@ class AppController extends AppLoader {
                 return;
             }
 
-            current = current.parentNode instanceof HTMLElement
-                ? current.parentNode
-                : null;
+            current = current.parentNode instanceof HTMLElement ? current.parentNode : null;
         }
     }
 }

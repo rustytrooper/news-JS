@@ -34,11 +34,7 @@ class News {
 
             const dateEl = newsClone.querySelector<HTMLElement>('.news__meta-date');
             if (dateEl) {
-                dateEl.textContent = item.publishedAt
-                    .slice(0, 10)
-                    .split('-')
-                    .reverse()
-                    .join('-');
+                dateEl.textContent = item.publishedAt.slice(0, 10).split('-').reverse().join('-');
             }
 
             const titleEl = newsClone.querySelector<HTMLElement>('.news__description-title');

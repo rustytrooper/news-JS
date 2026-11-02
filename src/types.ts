@@ -20,9 +20,9 @@ export interface SourcesResponse {
 }
 
 export interface EverythingNewsResponse {
-  status: string;
-  totalResults: number;
-  articles: Article[];
+    status: string;
+    totalResults: number;
+    articles: Article[];
 }
 
 export interface FullSource {
@@ -34,4 +34,3 @@ export interface FullSource {
     language: string;
     country: string;
 }
-
