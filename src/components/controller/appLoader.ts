@@ -4,7 +4,7 @@ class AppLoader extends Loader {
     constructor() {
         super({
             baseLink: process.env.API_URL!,
-            options: {  },
+            options: {},
         });
     }
 }

@@ -19,7 +19,7 @@
     overflow: hidden;
     border: 2px solid gray;
     border-radius: 20px;
-    box-shadow: 5px 12px 12px #30c5ff ;
+    box-shadow: 5px 12px 12px #30c5ff;
 }
 
 .news__item:hover .news__meta-photo {
@@ -138,29 +138,28 @@
     .news {
         gap: 40px;
     }
- .news__item {
-    width: 70vw;
-}
-.news__item .news__description h2 {
-    line-height: 1;
-    margin: 0;
-    font-size: 1.4rem;
-}
-.news__item p {
-    font-size: 0.9rem;
-}
+    .news__item {
+        width: 70vw;
+    }
+    .news__item .news__description h2 {
+        line-height: 1;
+        margin: 0;
+        font-size: 1.4rem;
+    }
+    .news__item p {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 480px) {
-       header h1 {
-    font-size: 1.5em;
-   
-}
- .news__item {
-    width: 80vw;
-}
+    header h1 {
+        font-size: 1.5em;
+    }
+    .news__item {
+        width: 80vw;
+    }
 
-.news__item p {
-    font-size: 0.7rem;
-}
+    .news__item p {
+        font-size: 0.7rem;
+    }
 }
