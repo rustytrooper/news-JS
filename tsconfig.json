@@ -10,7 +10,8 @@
         "sourceMap": true,
         "strict": true,
         "noImplicitAny": true,
-        "types": ["node"]
+        "types": ["node"],
+        "noUncheckedSideEffectImports": false
     },
     "include": ["src/**/*"]
 }
