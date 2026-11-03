@@ -1,3 +1,11 @@
+.news {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    justify-self: center;
+    gap: 40px;
+}
+
 .news__item {
     display: flex;
     flex-direction: column;
@@ -9,6 +17,9 @@
     font-family: Arial, sans-serif;
     border-radius: 5px;
     overflow: hidden;
+    border: 2px solid gray;
+    border-radius: 20px;
+    box-shadow: 5px 12px 12px #30c5ff;
 }
 
 .news__item:hover .news__meta-photo {
@@ -90,7 +101,9 @@
     margin-left: -10px;
     opacity: 0;
     vertical-align: middle;
-    transition: margin 0.3s, opacity 0.3s;
+    transition:
+        margin 0.3s,
+        opacity 0.3s;
 }
 
 .news__item .news__description .news__read-more a:hover:after {
@@ -121,46 +134,32 @@
     left: 0%;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 768px) {
+    .news {
+        gap: 40px;
+    }
     .news__item {
-        flex-direction: row;
-        max-width: 700px;
+        width: 70vw;
+    }
+    .news__item .news__description h2 {
+        line-height: 1;
+        margin: 0;
+        font-size: 1.4rem;
+    }
+    .news__item p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    .news__item {
+        width: 80vw;
     }
 
-    .news__item .news__meta {
-        flex-basis: 40%;
-        height: auto;
-    }
-
-    .news__item .news__description {
-        flex-basis: 60%;
-    }
-
-    .news__item .news__description:before {
-        -webkit-transform: skewX(-3deg);
-        transform: skewX(-3deg);
-        content: '';
-        background: #fff;
-        width: 30px;
-        position: absolute;
-        left: -10px;
-        top: 0;
-        bottom: 0;
-        z-index: -1;
-    }
-
-    .news__item.alt {
-        flex-direction: row-reverse;
-    }
-
-    .news__item.alt .news__description:before {
-        left: inherit;
-        right: -10px;
-        -webkit-transform: skew(3deg);
-        transform: skew(3deg);
-    }
-
-    .news__item.alt .news__meta-details {
-        padding-left: 25px;
+    .news__item p {
+        font-size: 0.7rem;
     }
 }
